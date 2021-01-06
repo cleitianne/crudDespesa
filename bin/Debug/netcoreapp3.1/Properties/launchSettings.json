@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Mobillis": {
+    "Mobills": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

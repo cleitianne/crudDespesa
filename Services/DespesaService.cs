@@ -36,15 +36,15 @@ namespace Mobills.Services
             this._repository.Update(entity, id);
         }
 
-        public double Somatorio()
+        public decimal Somatorio()
         {
             var despesas = this._repository.GetAll();
-            double soma = 0;
+            decimal soma = 0;
             foreach(Despesa despesa in despesas)
             {
                 if(despesa.Pago)
                 {
-                    soma += despesa.Valor;
+                    soma = soma + despesa.Valor;
                 }
             }
             return soma;

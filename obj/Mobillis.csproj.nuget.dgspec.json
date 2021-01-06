@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\55889\\Documents\\Projetos\\Mobillis\\Mobillis.csproj": {}
+    "C:\\Users\\55889\\Documents\\Projetos\\Mobills\\Mobills.csproj": {}
   },
   "projects": {
-    "C:\\Users\\55889\\Documents\\Projetos\\Mobillis\\Mobillis.csproj": {
+    "C:\\Users\\55889\\Documents\\Projetos\\Mobills\\Mobills.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55889\\Documents\\Projetos\\Mobillis\\Mobillis.csproj",
-        "projectName": "Mobillis",
-        "projectPath": "C:\\Users\\55889\\Documents\\Projetos\\Mobillis\\Mobillis.csproj",
+        "projectUniqueName": "C:\\Users\\55889\\Documents\\Projetos\\Mobills\\Mobills.csproj",
+        "projectName": "Mobills",
+        "projectPath": "C:\\Users\\55889\\Documents\\Projetos\\Mobills\\Mobills.csproj",
         "packagesPath": "C:\\Users\\55889\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55889\\Documents\\Projetos\\Mobillis\\obj\\",
+        "outputPath": "C:\\Users\\55889\\Documents\\Projetos\\Mobills\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55889\\AppData\\Roaming\\NuGet\\NuGet.Config"

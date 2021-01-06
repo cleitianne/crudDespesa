@@ -1,13 +1,16 @@
 using Microsoft.EntityFrameworkCore;
-using Mobillis.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace crudDespesa
+namespace Mobills.Models
 {
     public class Context : DbContext
     {
-        public Context(DbContextOptions<Context> options) : base(options)
-         {}
+        public Context(DbContextOptions<Context> options) : base(options) { }
 
-         public DbSet<Despesa> Despesas { get; set; }
+        public virtual DbSet<Despesa> Despesa {get;set;}
+        public virtual DbSet<Receita> Receita { get; set; }
     }
 }

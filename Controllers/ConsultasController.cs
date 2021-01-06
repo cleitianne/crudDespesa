@@ -11,10 +11,10 @@ namespace Mobills.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ConsultaController : ControllerBase
+    public class ConsultasController : ControllerBase
     {
         public readonly ConsultaService _service;
-        public ConsultaController(Context context)
+        public ConsultasController(Context context)
         {
             this._service = new ConsultaService(context);
         }

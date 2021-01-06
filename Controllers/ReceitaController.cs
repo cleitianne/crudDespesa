@@ -11,7 +11,7 @@ namespace Mobills.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ReceitaController : ControllerBase
+    public class ReceitasController : ControllerBase
     {
         public ReceitaService _service;
         public ReceitasController(Context context)

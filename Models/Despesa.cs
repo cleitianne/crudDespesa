@@ -1,6 +1,6 @@
 using System;
 
-namespace Mobillis.Models
+namespace Mobills.Models
 {
     public class Despesa
     {

@@ -9,10 +9,10 @@ namespace Mobills.Services
 {
     public class ReceitaService
     {
-        private readonly ReceitaRepository _repository;
+        private readonly ReceitasRepository _repository;
         public ReceitaService(Context context)
         {
-            this._repository = new ReceitaRepository(context);
+            this._repository = new ReceitasRepository(context);
         }
         public Receita GetById(int Id)
         {
@@ -36,15 +36,15 @@ namespace Mobills.Services
             this._repository.Update(entity, id);
         }
 
-        public double Somatorio()
+        public decimal Somatorio()
         {
             var receitas = this._repository.GetAll();
-            double soma = 0;
+            decimal soma = 0;
             foreach (Receita receita in receitas)
             {
                 if (receita.Recebido)
                 {
-                    soma += receita.Valor;
+                    soma = soma + receita.Valor;
                 }
             }
             return soma;

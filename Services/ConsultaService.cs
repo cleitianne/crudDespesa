@@ -16,7 +16,7 @@ namespace Mobills.Services
             this._receitaService = new ReceitaService(context);
         }
 
-        public double ConsultarSaldo()
+        public decimal ConsultarSaldo()
         {
             return _receitaService.Somatorio() - _despesaService.Somatorio();
 
