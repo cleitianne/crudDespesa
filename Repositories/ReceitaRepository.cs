@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Mobills.Models;
+using Mobills.Repositories.Interfaces;
 
 namespace Mobills.Repositories
 {
-    public class ReceitasRepository
+    public class ReceitasRepository : IReceitaRepository
     {
         private readonly Context _context;
 

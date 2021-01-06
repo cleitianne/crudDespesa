@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Mobills.Models;
 using Mobills.Services;
+using Mobills.Services.Interfaces;
 
 namespace Mobills.Controllers
 {
@@ -13,10 +14,10 @@ namespace Mobills.Controllers
     [ApiController]
     public class ConsultasController : ControllerBase
     {
-        public readonly ConsultaService _service;
-        public ConsultasController(Context context)
+        public readonly IConsultaService _service;
+        public ConsultasController(IConsultaService service)
         {
-            this._service = new ConsultaService(context);
+            this._service = service;
         }
         [HttpGet("saldo")]
         public IActionResult Soma()

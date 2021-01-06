@@ -2,17 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using crudDespesa.Repositories.Interfaces;
 using Mobills.Models;
 using Mobills.Repositories;
+using Mobills.Services.Interfaces;
 
 namespace Mobills.Services
 {
-    public class DespesaService
+    public class DespesaService : IDespesaService
     {
-        private readonly DespesaRepository _repository;
-        public DespesaService(Context context)
+        private readonly IDespesaRepository _repository;
+        public DespesaService(IDespesaRepository repository)
         {
-            this._repository = new DespesaRepository(context);
+            this._repository = repository;
         }
         public Despesa GetById(int Id)
         {

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Mobills.Models;
 using Mobills.Services;
+using Mobills.Services.Interfaces;
 
 namespace Mobills.Controllers
 {
@@ -13,10 +14,10 @@ namespace Mobills.Controllers
     [ApiController]
     public class ReceitasController : ControllerBase
     {
-        public ReceitaService _service;
-        public ReceitasController(Context context)
+        public IReceitaService _service;
+        public ReceitasController(IReceitaService service)
         {
-            _service = new ReceitaService(context);
+            _service = service;
         }
 
 

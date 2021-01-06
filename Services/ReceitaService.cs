@@ -4,15 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Mobills.Models;
 using Mobills.Repositories;
+using Mobills.Repositories.Interfaces;
+using Mobills.Services.Interfaces;
 
 namespace Mobills.Services
 {
-    public class ReceitaService
+    public class ReceitaService : IReceitaService
     {
-        private readonly ReceitasRepository _repository;
-        public ReceitaService(Context context)
+        private readonly IReceitaRepository _repository;
+        public ReceitaService(IReceitaRepository repository)
         {
-            this._repository = new ReceitasRepository(context);
+            this._repository = repository;
         }
         public Receita GetById(int Id)
         {

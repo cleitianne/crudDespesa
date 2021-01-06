@@ -12,6 +12,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using crudDespesa.Repositories.Interfaces;
+using Mobills.Repositories;
+using Mobills.Repositories.Interfaces;
+using Mobills.Services.Interfaces;
+using Mobills.Services;
 
 namespace Mobills
 {
@@ -27,8 +32,17 @@ namespace Mobills
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+             services.AddControllers();
              services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+             services.AddSwaggerGen();
+
+        
+            services.AddScoped<IDespesaRepository, DespesaRepository>();
+            services.AddScoped<IReceitaRepository, ReceitasRepository>();
+
+            services.AddScoped<IDespesaService, DespesaService>();
+            services.AddScoped<IReceitaService, ReceitaService>();
+            services.AddScoped<IConsultaService, ConsultaService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +63,10 @@ namespace Mobills
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwagger();
+
+	        app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1"); });
         }
     }
 }

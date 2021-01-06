@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using crudDespesa.Repositories.Interfaces;
 using Mobills.Models;
 
 namespace Mobills.Repositories
 {
-    public class DespesaRepository
+    public class DespesaRepository : IDespesaRepository
     {
         private readonly Context _context;
 
