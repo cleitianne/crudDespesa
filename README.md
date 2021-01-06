@@ -8,7 +8,7 @@ Projeto em .Net: Crud de Despesas e Receitas.
 ## Documentação da API
 O swagger foi utilizado à fim de documentar a API. Para se ter acesso, execute o projeto e acesse (host:porta/swagger/index.html).
 
-## Configuração do Peojeto (Windows)
+## Configuração do Projeto (Windows)
 - Instalar o .net core e o sql server.
 - Instalar Visual Studio 2019 OU Visual Studio Code.
 - No arquivo *appsetting.json* configurar a string de conexão de acordo com a configuração do SQL SERVER
