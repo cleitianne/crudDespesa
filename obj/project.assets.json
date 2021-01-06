@@ -6498,30 +6498,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\welli\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\55889\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\welli\\Desktop\\Cleitianne\\crudDespesa\\Mobills.csproj",
+      "projectUniqueName": "C:\\Users\\55889\\Documents\\Projetos\\Mobills\\Mobills.csproj",
       "projectName": "Mobills",
-      "projectPath": "C:\\Users\\welli\\Desktop\\Cleitianne\\crudDespesa\\Mobills.csproj",
-      "packagesPath": "C:\\Users\\welli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\welli\\Desktop\\Cleitianne\\crudDespesa\\obj\\",
+      "projectPath": "C:\\Users\\55889\\Documents\\Projetos\\Mobills\\Mobills.csproj",
+      "packagesPath": "C:\\Users\\55889\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\55889\\Documents\\Projetos\\Mobills\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\welli\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\55889\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6581,7 +6575,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
