@@ -3,7 +3,7 @@ Projeto em .Net: Crud de Despesas e Receitas.
 
 ## Estrutura
 - Padrões como Models e Controllers foram utilizados.
-- Bem como um padrões de Repository e de Services.
+- Bem como padrões de Repository e de Services.
 
 ## Documentação da API
 O swagger foi utilizado à fim de documentar a API. Para se ter acesso, execute o projeto e acesse (host:porta/swagger/index.html).
